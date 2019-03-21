@@ -63,28 +63,70 @@
 // //console.log(jimHaff)
 
 
-let ninjaTurtle = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
+//let ninjaTurtle = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
 
 // for(i = 0; i < ninjaTurtle.length; i++){
 //   console.log(ninjaTurtle[i].toUpperCase())
 // }
 
-function upperLower(args){
-  //let newTurt = "";
-  for(let i = 0; i < ninjaTurtle.length; i++){
-    let newTurt = "";
-    for(let j = 0; j < ninjaTurtle[i].length; j++){
-      //console.log(ninjaTurtle[i][j])
-      if(j % 2 === 0) {
-        newTurt += ninjaTurtle[i][j].toUpperCase()
-      }
-      else{
-        newTurt += ninjaTurtle[i][j].toLowerCase()
-      }
-    }
-    ninjaTurtle[i] = newTurt
-  }
-  return ninjaTurtle;
-}
+// function upperLower(args){
+//   //let newTurt = "";
+//   for(let i = 0; i < ninjaTurtle.length; i++){
+//     let newTurt = "";
+//     for(let j = 0; j < ninjaTurtle[i].length; j++){
+//       //console.log(ninjaTurtle[i][j])
+//       if(j % 2 === 0) {
+//         newTurt += ninjaTurtle[i][j].toUpperCase()
+//       }
+//       else{
+//         newTurt += ninjaTurtle[i][j].toLowerCase()
+//       }
+//     }
+//     ninjaTurtle[i] = newTurt
+//   }
+//   return ninjaTurtle;
+// }
 
-console.log(upperLower(ninjaTurtle))
+//console.log(upperLower(ninjaTurtle))
+
+
+
+// const kristynsCloset = [
+//   "left shoe",
+//   "cowboy boots",
+//   "right sock",
+//   "GA hoodie",
+//   "green pants",
+//   "yellow knit hat",
+//   "marshmallow peeps"
+// ];
+//
+// // Thom's closet is more complicated. Check out this nested data structure!!
+// const thomsCloset = [
+//   [
+//     // These are Thom's shirts
+//     "grey button-up",
+//     "dark grey button-up",
+//     "light blue button-up",
+//     "blue button-up",
+//   ],[
+//     // These are Thom's pants
+//     "grey jeans",
+//     "jeans",
+//     "PJs"
+//   ],[
+//     // Thom's accessories
+//     "wool mittens",
+//     "wool scarf",
+//     "raybans"
+//   ]
+// ];
+///////////#2 NOT DONE/////////////////
+// let kristynsShoe = kristynsCloset.shift()
+// console.log(kristynsCloset)
+// thomsCloset[2].push(kristynsShoe);
+// console.log(thomsCloset[2])
+//
+// function krisOutfit(args){
+//
+// }
