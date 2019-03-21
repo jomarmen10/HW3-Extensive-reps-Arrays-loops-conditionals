@@ -32,32 +32,59 @@
 // }
 
 
-const kenny = ["Kenny", 1000, "Austin"];
-const jimHaff = ["Jim H", 16, "All cities"];
-const reuben = ["Reuben", 22, "Durham"];
-const jimClark = ["Jim C", 186, "LA"];
-const ryan = ["Ryan", 65, "Denver"];
+// const kenny = ["Kenny", 1000, "Austin"];
+// const jimHaff = ["Jim H", 16, "All cities"];
+// const reuben = ["Reuben", 22, "Durham"];
+// const jimClark = ["Jim C", 186, "LA"];
+// const ryan = ["Ryan", 65, "Denver"];
+//
+//
+// kenny[0] = "Gameboy";
+// //console.log(kenny)
+//
+// for (let i = 0; i < jimClark.length; i++){
+//   if(!isNaN(jimClark[i])){
+//     jimClark[i]++;
+//   }
+// }
+//
+// //console.log(jimClark)
+//
+// ryan[2] = "Gotham City";
+// //console.log(ryan)
+//
+// reuben.pop();
+// reuben.push("Chicago")
+// //console.log(reuben)
+//
+// jimHaff.splice(2, 1, "city","city1","city3")
+// //console.log(jimHaff)
+// jimHaff.splice(2, 1)
+// //console.log(jimHaff)
 
 
-kenny[0] = "Gameboy";
-//console.log(kenny)
+let ninjaTurtle = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
 
-for (let i = 0; i < jimClark.length; i++){
-  if(!isNaN(jimClark[i])){
-    jimClark[i]++;
+// for(i = 0; i < ninjaTurtle.length; i++){
+//   console.log(ninjaTurtle[i].toUpperCase())
+// }
+
+function upperLower(args){
+  //let newTurt = "";
+  for(let i = 0; i < ninjaTurtle.length; i++){
+    let newTurt = "";
+    for(let j = 0; j < ninjaTurtle[i].length; j++){
+      //console.log(ninjaTurtle[i][j])
+      if(j % 2 === 0) {
+        newTurt += ninjaTurtle[i][j].toUpperCase()
+      }
+      else{
+        newTurt += ninjaTurtle[i][j].toLowerCase()
+      }
+    }
+    ninjaTurtle[i] = newTurt
   }
+  return ninjaTurtle;
 }
 
-//console.log(jimClark)
-
-ryan[2] = "Gotham City";
-//console.log(ryan)
-
-reuben.pop();
-reuben.push("Chicago")
-//console.log(reuben)
-
-jimHaff.splice(2, 1, "city","city1","city3")
-//console.log(jimHaff)
-jimHaff.splice(2, 1)
-//console.log(jimHaff)
+console.log(upperLower(ninjaTurtle))
