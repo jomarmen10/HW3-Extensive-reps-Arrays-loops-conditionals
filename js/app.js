@@ -91,42 +91,49 @@
 
 
 
-// const kristynsCloset = [
-//   "left shoe",
-//   "cowboy boots",
-//   "right sock",
-//   "GA hoodie",
-//   "green pants",
-//   "yellow knit hat",
-//   "marshmallow peeps"
-// ];
-//
-// // Thom's closet is more complicated. Check out this nested data structure!!
-// const thomsCloset = [
-//   [
-//     // These are Thom's shirts
-//     "grey button-up",
-//     "dark grey button-up",
-//     "light blue button-up",
-//     "blue button-up",
-//   ],[
-//     // These are Thom's pants
-//     "grey jeans",
-//     "jeans",
-//     "PJs"
-//   ],[
-//     // Thom's accessories
-//     "wool mittens",
-//     "wool scarf",
-//     "raybans"
-//   ]
-// ];
+const kristynsCloset = [
+  "left shoe",
+  "cowboy boots",
+  "right sock",
+  "GA hoodie",
+  "green pants",
+  "yellow knit hat",
+  "marshmallow peeps"
+];
+
+// Thom's closet is more complicated. Check out this nested data structure!!
+const thomsCloset = [
+  [
+    // These are Thom's shirts
+    "grey button-up",
+    "dark grey button-up",
+    "light blue button-up",
+    "blue button-up",
+  ],[
+    // These are Thom's pants
+    "grey jeans",
+    "jeans",
+    "PJs"
+  ],[
+    // Thom's accessories
+    "wool mittens",
+    "wool scarf",
+    "raybans"
+  ]
+];
 ///////////#2 NOT DONE/////////////////
-// let kristynsShoe = kristynsCloset.shift()
-// console.log(kristynsCloset)
-// thomsCloset[2].push(kristynsShoe);
-// console.log(thomsCloset[2])
-//
-// function krisOutfit(args){
-//
-// }
+let kristynsShoe = kristynsCloset.shift()
+//console.log(kristynsCloset)
+thomsCloset[2].push(kristynsShoe);
+//console.log(thomsCloset[2])
+
+
+for(let i = 0; i < kristynsCloset.length; i++){
+  console.log("WHIRR: Now washing", i)
+}
+
+for(let i = 0; i < thomsCloset.length; i++){
+  for(let j = 0; j < thomsCloset[i].length; j++){
+    console.log(thomsCloset[i][j])
+  }
+}
